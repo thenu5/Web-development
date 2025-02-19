@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(27, 27, 27);
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.header .logo img {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add margin to create space between the icon and text */
+}
+
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    gap: 40px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+.navbar::-webkit-scrollbar { 
+    display: none;  
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #79eef2;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.search-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box{
+    width: 30%;
+    padding: 10px 10px 10px 40px;
+    text-align: center;
+    border: 1px solid #555;
+    background: white url('./img/search.svg') no-repeat 13px center;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card{
+    background: #f0ece2;
+    border-radius: 30px;
+    border: 2px solid #79eef2;
+    width: 250px;
+    height: 230px;
+    margin: 10px;
+   
+}
+
+
+/* Add this CSS for the hover effect */
+.card {
+    transition: opacity 0.3s ease;
+}
+
+.card:hover {
+    opacity: 0.4; /* Adjust the opacity value as desired */
+}
+
+
+/* .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    flex-basis: calc(20% - 20px); 
+    margin-bottom: 20px; 
+    background-size: cover;
+    background-position: center;
+}
+.card-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} */
+
+
+
+.card-image{
+    height: 150px;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.card-content{
+    padding: 10px;
+    
+}
+
+.img-1{
+    background-image: url(./img/ar.jpg);
+
+}
+
+.img-2{
+    background-image: url(./img/u1.png);
+}
+
+.img-3{
+    background-image: url(./img/vj-antony.jpg);
+}
+
+.img-4{
+    background-image: url(./img/pradeep.jpeg);
+}
+
+.img-5 {
+    background-image: url(./img/shreyagoshal.jpg);
+}
+
+.img-6 {
+    background-image: url(./img/andrea.jpg);
+}
+
+.img-7 {
+    background-image: url(./img/shankar.jpg);
+}
+
+.img-8 {
+    background-image: url(./img/anirudh.png);
+}
+
+.img-9 {
+    background-image: url(./img/harrisjayaraj.jpg);
+}
+
+.img-10 {
+    background-image: url(./img/gvprakash.webp);
+}
+
+.img-11 {
+    background-image: url(./img/srinisha.jpg);
+}
+
+.img-12 {
+    background-image: url(./img/hiphop.jpg);
+}
+
+.img-13 {
+    background-image: url(./img/chithra.jpg);
+}
+
+.img-14 {
+    background-image: url(./img/jonita.jpg);
+}
+
+.img-15 {
+    background-image: url(./img/sidsriram.jpg);
+}

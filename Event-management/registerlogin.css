@@ -1,0 +1,71 @@
+
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .form {
+    padding: 20px;
+    width: 80%; /* Set the width to 40% */
+    text-align: center; /* Center align the content inside the form */
+    width: 700px;
+  
+  }
+  
+  .login-form {
+    border-top: 2px solid #79eef2; /* Horizontal line to separate forms with the new glow color */
+    padding-top: 20px;
+  }
+  
+  .form h2 {
+    text-shadow: 0 0 3px #79eef2; /* Header text glow with the new glow color */
+  }
+  
+  .form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    text-shadow: 0 0 5px #79eef2; /* Label text glow with the new glow color */
+  }
+  
+  .form input[type="text"],
+  .form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #79eef2; /* Input border glow with the new glow color */
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    outline: none;
+    text-align: center;
+  }
+  
+  .form button {
+    width: 100%;
+    padding: 10px;
+    background: #79eef2; /* Background color with the new glow color */
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .form button:hover {
+    background: #33a3b8; /* Change the hover color if needed */
+  }
+  

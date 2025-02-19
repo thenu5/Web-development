@@ -1,0 +1,44 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>Todo List with Task Completion and Deadline Alerts</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Todo List with Task Completion and Deadline Alerts</h1>
+        <div class="input-container">
+            <input v-model="newTask" @keydown.enter="addTask" placeholder="Add a task">
+            <input type="time" v-model="newTime" @change="updateTime" placeholder="Set a time">
+            <button @click="addTask">Add</button>
+        </div>
+        <ul>
+            <li v-for="(task, index) in tasks" :key="index" :class="{ completed: task.completed }">
+                <div class="task-info">
+                    <input type="checkbox" v-model="task.completed" class="task-checkbox">
+                    <!-- <span>{{ task.name }}</span> -->
+                    <span class="task-name">{{ task.name }}</span>
+                    <span class="task-time">{{ task.time }}</span>
+                </div>
+                <div class="task-actions">
+                    <button @click="removeTask(index)">Remove</button>
+                    <button @click="setDeadline(index)">Set Deadline</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+ 
+    <script src="./main.js"></script>
+</body>
+</html>
+
+
+
+
+
